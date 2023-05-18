@@ -63,6 +63,10 @@ bool serachNode(int nim, Node* current, Node* previous) {
 	{
 		return false;
 	}
+	else if (current->noMhs == nim)
+	{
+		return true;
+	}
 	else
 	{
 		return false;
@@ -77,6 +81,13 @@ bool deleteNode(int nim) {
 	if (current == START)
 		START = current->next;
 	return true;
+}
+bool listEmpty() {
+	if (START == NULL)
+		return true;
+	else
+		return false;
+
 }
 
 
