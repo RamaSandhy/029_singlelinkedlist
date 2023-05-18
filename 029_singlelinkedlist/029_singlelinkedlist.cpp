@@ -142,6 +142,7 @@ int main() {
 			cout << "3. Tampilkan Data" << endl;
 			cout << "4. Cari Data" << endl;
 			cout << "5. Keluar" << endl;
+			cout << "pilihan: ";
 			cin >> pilihan;
 			switch (pilihan)
 			{
@@ -161,6 +162,14 @@ int main() {
 				}
 
 				int nim;
+				cout << "Masukkan NIM: ";
+				cin >> nim;
+				if (deleteNode(nim)) {
+					cout << "nim: " << nim << " berhasil dihapus" << endl;
+					system("pause");
+					system("cls");
+				}
+				
 			}
 		}
 	}
